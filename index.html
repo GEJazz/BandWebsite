@@ -21,6 +21,13 @@
   }
 }
 
+@media screen and (max-width: 560px) {
+  .youtube {
+    width: 400px !important;
+    height: 225px !important;
+  }
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -83,6 +90,12 @@ p {
 
 .spacer {
   height: 50px;
+}
+
+.youtube {
+  width: 560px;
+  height: 315px; 
+  frameborder: 20px; 
 }
 
 </style>
@@ -206,7 +219,7 @@ p {
 <span class="column">
   <p>You can get the full-length version of these recordings by purchasing a hard copy of our CD at any of our gigs (or if you happen to catch us out busking somewhere)!</p>
   <p>WATCH</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QtFcQ7g1IaE" title="YouTube video player" frameborder="20" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="youtube" src="https://www.youtube.com/embed/QtFcQ7g1IaE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </span>
 </div>
 
