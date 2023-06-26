@@ -16,13 +16,13 @@
   <div class="logo">Golden Earrings Jazz Band</div>
   <ul class="nav-links">
     <input type="checkbox" id="checkbox_toggle"/>
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
     <div class="menu">
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Shows">Shows</a></li>
-      <li><a href="#Media">Media</a></li>
-      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#Home" onclick="disappear_menu()">Home</a></li>
+      <li><a href="#About" onclick="disappear_menu()">About</a></li>
+      <li><a href="#Shows" onclick="disappear_menu()">Shows</a></li>
+      <li><a href="#Media" onclick="disappear_menu()">Media</a></li>
+      <li><a href="#Contact" onclick="disappear_menu()">Contact</a></li>
     </div>
   </ul>
 </nav>
@@ -158,6 +158,28 @@
 
 
 </div>
+
+
+<script type="text/javascript">
+  
+
+
+
+function disappear_menu() {
+
+  if (window.getComputedStyle(document.getElementById('hamburger')).display === "block") {
+    setTimeout(() => {
+    document.location.reload();
+    }, 30);
+  }
+}
+
+
+
+</script>
+
+
+
 
 </body>
 </html>
