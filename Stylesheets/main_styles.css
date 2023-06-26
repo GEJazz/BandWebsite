@@ -1,4 +1,4 @@
-@font-face { font-family: Nickerbocker; src: url("Media/NickerbockerNF.ttf"); } 
+@font-face { font-family: Nickerbocker; src: url("../Media/NickerbockerNF.ttf"); } 
 
 @media screen and (max-width: 768px) {
   .column {
