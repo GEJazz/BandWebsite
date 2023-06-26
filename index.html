@@ -17,11 +17,19 @@
   <ul class="nav-links">
     <input type="checkbox" id="checkbox_toggle"/>
     <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
-    <div class="menu">
+    <div class="menu wide_menu">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Shows">Shows</a></li>
+      <li><a href="#Media">Media</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </div>
+    <div class="menu narrow_menu">
       <li><a href="#Home" onclick="disappear_menu()">Home</a></li>
       <li><a href="#About" onclick="disappear_menu()">About</a></li>
       <li><a href="#Shows" onclick="disappear_menu()">Shows</a></li>
-      <li><a href="#Media" onclick="disappear_menu()">Media</a></li>
+      <li><a href="#Listen" onclick="disappear_menu()">Listen</a></li>
+      <li><a href="#Watch" onclick="disappear_menu()">Watch</a></li>
       <li><a href="#Contact" onclick="disappear_menu()">Contact</a></li>
     </div>
   </ul>
@@ -41,12 +49,12 @@
   </span>
 </div>
 
-<div class="row" id="About">
+<div class="row">
 
   <span class="column">
   <img src="Media/Images/vintagegirl.jpg" alt="Robin looking vintage"  align="left">
   </span>
-    <span class="column">
+    <span class="column" id="About">
   <p>Step into the 1920s, '30s and '40s by listening (and dancing!) to a duo of multi-instrumentalists who truly live and breathe that era's music. Golden Earrings Jazz Band plays favorites by the likes of Josephine Baker, Mamie Smith, Connie Boswell, Fats Waller, Sophie Tucker, Edith Piaf, and Sidney Bechet. From New Orleans standards to French chanson, we've got what you need to feel like you're living in another time — and we love to throw in a few country and Latin favorites as well.</p>
   </span>
 </div>
@@ -68,10 +76,10 @@
 </div>
 
 
-<div class="row" id="Shows">
+<div class="row">
   <img src="Media/Images/SHOWS.png" alt="Performing in a bar" align="right">
 </div> 
-<div class="row">
+<div class="row" id="Shows">
 <ul>
 <li><br><br>UPCOMING EVENTS<br></li>
 <li><br><br>July 12th at the <a href="https://www.travelinggoatseattle.com/" class="inline_link" target="blank">Traveling Goat</a>, 7-9pm (Wednesday)</li>
@@ -84,16 +92,16 @@
 </div>
 <div class="spacer"></div>
 
-<div class="row" id="Media">
+<div class="row">
     <img src="Media/Images/MEDIA.png" alt="Golden Earrings recording a song" align="right">
   </div>
 
 <div class="spacer"></div>
 <div class="spacer"></div>
-<div class="row">
+<div class="row" id="Media">
 
 <span class="column">
-  <p>LISTEN</p>
+  <p id="Listen">LISTEN</p>
   <figure>
     <figcaption>"Hummin' To Myself"<span><br>(Fain/Magidson/Siegel, 1932)</span></figcaption>
     <audio
@@ -128,7 +136,7 @@
 </span>
 <span class="column">
   <p>You can get the full-length version of these recordings by purchasing a hard copy of our CD at any of our gigs (or if you happen to catch us out busking somewhere)!</p>
-  <p>WATCH</p>
+  <p id="Watch">WATCH</p>
     <iframe class="youtube" src="https://www.youtube.com/embed/QtFcQ7g1IaE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </span>
 </div>
@@ -140,11 +148,11 @@
 </div>
 
 <div class="spacer"></div>
-<div class="row" id="Contact">
+<div class="row">
   <img src="Media/Images/CONTACT.png" alt="Social media grid" align="right">
 </div> 
 <div class="spacer"></div>
-<div class="row">
+<div class="row" id="Contact">
   <p>Follow us on social media or have us play at your event!<br/>For booking: goldenearringsjazz@gmail.com</p>
 </div>
 <div class="spacer"></div>
