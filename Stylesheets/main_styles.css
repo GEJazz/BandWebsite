@@ -16,6 +16,12 @@
   }
 }
 
+:root {
+  --gold: #D4AF37;
+  --copper: #B87333;
+  --light_copper: #CCA37C;
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -28,7 +34,7 @@ a {
 
 body {
   font-family: Nickerbocker;
-  color: #D4AF37;
+  color: var(--gold);
   background-color: black;
   font-size: 32px;
 }
@@ -66,6 +72,14 @@ p {
 
 .image-container {
   padding: 10%;
+}
+
+.inline_link {
+  color: var(--copper);
+}
+
+.inline_link:hover {
+  color: var(--light_copper);
 }
 
 .row {

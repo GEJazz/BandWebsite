@@ -9,7 +9,7 @@
 }
 
 .menu li:hover {
-  background-color: #B87333;
+  background-color: var(--copper);
   border-radius: 5px;
   transition: 0.3s ease;
 }
@@ -20,7 +20,7 @@
   justify-content: space-between;
   padding: 20px;
   background-color: black;
-  border: 1px solid #D4AF37;
+  border: 1px solid var(--gold);
   border-style: double;
   border-width: 15px;
   width: 100%;
@@ -29,7 +29,7 @@
 }
 
 .nav-links a {
-  color: #D4AF37;
+  color: var(--gold);
 }
 
 input[type=checkbox] {
@@ -43,7 +43,7 @@ input[type=checkbox] {
 }
 
 .hamburger:hover {
-  background-color: #B87333;
+  background-color: var(--copper);
   border-radius: 5px;
   transition: 0.3s ease;
 }
@@ -57,14 +57,14 @@ input[type=checkbox] {
     left: 0;
     text-align: center;
     padding: 16px 0;
-    border: 1px solid #D4AF37;
+    border: 1px solid var(--gold);
     border-style: double;
     border-width: 15px;
   }
 
   .menu li:hover {
     display: inline-block;
-    background-color:#B87333;
+    background-color: var(--copper);
     transition: 0.3s ease;
   }
 
