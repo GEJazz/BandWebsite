@@ -168,9 +168,7 @@
 function disappear_menu() {
 
   if (window.getComputedStyle(document.getElementById('hamburger')).display === "block") {
-    setTimeout(() => {
     document.location.reload();
-    }, 30);
   }
 }
 
