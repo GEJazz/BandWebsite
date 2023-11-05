@@ -3,6 +3,7 @@
 @media screen and (max-width: 1000px) {
   #introtext {
     padding-top: 150px;
+    font-size: 32px;
   }
 }
 
@@ -13,9 +14,6 @@
 
   .row {
     flex-direction: column;
-  }
-  #introtext {
-    font-size: 32px;
   }
 }
 
