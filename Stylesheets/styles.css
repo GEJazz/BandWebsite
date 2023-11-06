@@ -1,0 +1,214 @@
+@font-face { font-family: Nickerbocker; src: url("../Media/NickerbockerNF.ttf"); } 
+
+
+
+:root {
+  --gold: #D4AF37;
+  --copper: #B87333;
+  --light_copper: #CCA37C;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  #introtext {
+    padding-top: 150px;
+    font-size: 32px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  input[type=checkbox]:checked ~ .narrow_menu {
+    display: block;
+  }
+
+  .column {
+    flex: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: var(--copper);
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+ .narrow_menu {
+    display:none;
+    position: absolute;
+    background-color: black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    border: 1px solid var(--gold);
+    border-style: double;
+    border-width: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .wide_menu {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 560px) {
+  .youtube {
+    width: 400px !important;
+    height: 225px !important;
+  }
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Nickerbocker;
+  color: var(--gold);
+  background-color: black;
+  font-size: 32px;
+}
+
+figcaption span {
+  font-size: 14px;
+}
+
+figure {
+  padding-left: 5%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input[type=checkbox] {
+  display: none;
+} 
+
+li {
+  list-style: none;
+}
+
+p {
+  padding: 5%;
+}
+
+.bigtext {
+  font-size: 60px;
+  text-align: center;
+}
+
+.callout {
+  padding: 20%;
+}
+
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.hamburger:hover {
+  background-color: var(--copper);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.image-container {
+  padding: 10%;
+}
+
+.inline_link {
+  color: var(--copper);
+}
+
+.inline_link:hover {
+  color: var(--light_copper);
+}
+
+.menu {
+  gap: 1em;
+  display: flex;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.menu li:hover {
+  background-color: var(--copper);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.narrow_menu {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  border: 1px solid var(--gold);
+  border-style: double;
+  border-width: 15px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-links a {
+  color: var(--gold);
+}
+
+.row {
+  display: flex;
+  background: black;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  height: 50px;
+}
+
+.youtube {
+  width: 560px;
+  height: 315px; 
+  frameborder: 20px; 
+}
+
+
