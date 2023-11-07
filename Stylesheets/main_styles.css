@@ -1,0 +1,113 @@
+@font-face { font-family: Nickerbocker; src: url("../Media/NickerbockerNF.ttf"); } 
+
+@media screen and (max-width: 1000px) {
+  #introtext {
+    padding-top: 150px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .youtube {
+    width: 400px !important;
+    height: 225px !important;
+  }
+}
+
+:root {
+  --gold: #D4AF37;
+  --copper: #B87333;
+  --light_copper: #CCA37C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Nickerbocker;
+  color: var(--gold);
+  background-color: black;
+  font-size: 32px;
+}
+
+figcaption span {
+  font-size: 14px;
+}
+
+figure {
+  padding-left: 5%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  padding: 5%;
+}
+
+.bigtext {
+  font-size: 60px;
+  text-align: center;
+}
+
+.callout {
+  padding: 20%;
+}
+
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+.image-container {
+  padding: 10%;
+}
+
+.inline_link {
+  color: var(--copper);
+}
+
+.inline_link:hover {
+  color: var(--light_copper);
+}
+
+.row {
+  display: flex;
+  background: black;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  height: 50px;
+}
+
+.youtube {
+  width: 560px;
+  height: 315px; 
+  frameborder: 20px; 
+}
