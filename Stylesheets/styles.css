@@ -20,23 +20,12 @@
 
 
 @media screen and (max-width: 768px) {
+  input[type=checkbox]:checked ~ .narrow_menu {
+    display: block;
+  }
 
   .column {
     flex: 100%;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-}
-
-
-
-@media (max-width: 768px) {
-
-  input[type=checkbox]:checked ~ .narrow_menu {
-    display: block;
   }
 
   .hamburger {
@@ -65,12 +54,15 @@
     border-style: double;
     border-width: 15px;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
   .wide_menu {
     display: none;
   }
-
 }
-
 
 
 
