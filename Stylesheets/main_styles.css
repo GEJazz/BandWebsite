@@ -217,6 +217,12 @@ p {
     width: 400px !important;
     height: 225px !important;
   }
+  #hamburger {
+    font-size: 22px;
+  }
+  #logo {
+    font-size: 22px;
+  }
 }
 
 
