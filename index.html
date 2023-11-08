@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -8,31 +9,37 @@
 <link rel="stylesheet" href="Stylesheets/social_icons.css">
 <link rel="icon" type="image/x-icon" href="Media/Images/favicon.png">
 <title>Golden Earrings Jazz Band | Vintage jazz and French music in Seattle</title>
+</head>
 
 <body>
 
-<nav class="navbar">
-  <div class="logo">Golden Earrings Jazz Band</div>
-  <ul class="nav-links">
-    <input type="checkbox" id="checkbox_toggle"/>
-    <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
-    <div class="menu wide_menu">
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Shows">Shows</a></li>
-      <li><a href="#Media">Media</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </div>
-    <div class="menu narrow_menu">
-      <li><a href="#Home" onclick="disappear_menu()">Home</a></li>
-      <li><a href="#About" onclick="disappear_menu()">About</a></li>
-      <li><a href="#Shows" onclick="disappear_menu()">Shows</a></li>
-      <li><a href="#Listen" onclick="disappear_menu()">Listen</a></li>
-      <li><a href="#Watch" onclick="disappear_menu()">Watch</a></li>
-      <li><a href="#Contact" onclick="disappear_menu()">Contact</a></li>
-    </div>
+
+
+<div class="navbar">
+  <a id="logo" href="#Home" onclick="closeDropdown();">Golden Earrings Jazz Band</a>
+
+  <div id="navbar_links">
+    <ul>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Shows">Shows</a></li>
+    <li><a href="#Media">Watch & Listen</a></li>
+    <li><a href="#Contact">Contact</a></li>
   </ul>
-</nav>
+  </div>
+ 
+  <div id="dropdown_links">
+    <a href="#About" onclick="closeDropdown();">About</a>
+    <a href="#Shows" onclick="closeDropdown();">Shows</a>
+    <a href="#Watch" onclick="closeDropdown();">Watch</a>
+    <a href="#Listen" onclick="closeDropdown();">Listen</a>
+    <a href="#Contact" onclick="closeDropdown();">Contact</a>
+  </div>
+ 
+  <a href="javascript:void(0);" id="hamburger" onclick="expandMenu()">&#9776;</a>
+</div>
+
+
+
 
 <div class="container">
 
@@ -177,21 +184,51 @@
 </div>
 
 
+
+
 <script type="text/javascript">
-  
 
 
+var dropdown = document.getElementById("dropdown_links");
+var nav_links = document.getElementById("navbar_links");
+var hamburger = document.getElementById("hamburger");
+var body = document.getElementById("body");
 
-function disappear_menu() {
 
-  if (window.getComputedStyle(document.getElementById('hamburger')).display === "block") {
-    document.location.reload();
+if (window.innerWidth >= 800) {
+  hamburger.style.display = "none";
+  nav_links.style.display = "block";
+} else {
+  hamburger.style.display = "block";
+  nav_links.style.display = "none";
+}
+
+function expandMenu() {
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
   }
 }
 
+function closeDropdown() {
+  dropdown.style.display = "none";
+}
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth >= 800) {
+    hamburger.style.display = "none";
+    nav_links.style.display = "block";
+    closeDropdown();
+  } else {
+    hamburger.style.display = "block";
+    nav_links.style.display = "none";
+  }
+}, true);
 
 
 </script>
+
 
 
 

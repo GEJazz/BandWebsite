@@ -18,6 +18,8 @@
 
 
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -48,17 +50,21 @@ img {
   max-height: 100%;
 }
 
-input[type=checkbox] {
-  display: none;
-} 
-
 li {
   list-style: none;
+  display: inline-flex;
 }
 
 p {
   padding: 5%;
 }
+
+
+
+
+
+
+
 
 .bigtext {
   font-size: 60px;
@@ -74,18 +80,6 @@ p {
   padding: 20px;
 }
 
-.hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
-}
-
-.hamburger:hover {
-  background-color: var(--copper);
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
 .image-container {
   padding: 10%;
 }
@@ -98,43 +92,30 @@ p {
   color: var(--light_copper);
 }
 
-.menu {
-  gap: 1em;
-  display: flex;
-  font-size: 18px;
-}
-
-.menu li {
-  padding: 5px 14px;
-}
-
-.menu li:hover {
-  background-color: var(--copper);
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-
-.narrow_menu {
-  display: none;
-}
-
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  overflow: hidden;
   background-color: black;
   border: 1px solid var(--gold);
   border-style: double;
   border-width: 15px;
-  width: 100%;
+  padding: 20px;
   position: fixed;
+  width: 100%;
   z-index: 1;
 }
 
-.nav-links a {
+.navbar a {
   color: var(--gold);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: var(--copper);
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .row {
@@ -162,6 +143,44 @@ p {
 
 
 
+#dropdown_links {
+  display: none;
+}
+
+#hamburger {
+  background: black;
+  display: block;
+  font-size: 32px;
+  position: absolute; 
+  top: 0;
+  right: 0;
+  border: 1px solid var(--gold);
+  margin: 20px;
+}
+
+
+#hamburger:hover {
+  background-color: var(--copper);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#logo {
+  font-size: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
   #introtext {
@@ -172,55 +191,23 @@ p {
 
 
 
-
-
-
-@media screen and (max-width: 768px) {
-  input[type=checkbox]:checked ~ .narrow_menu {
-    display: block;
-  }
-
- .column {
-    flex: 100%;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .menu li:hover {
-    display: inline-block;
-    background-color: var(--copper);
-    transition: 0.3s ease;
-  }
-
-  .menu li + li {
-    margin-top: 12px;
-  }
-
- .narrow_menu {
-    display:none;
-    position: absolute;
-    background-color: black;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-    border: 1px solid var(--gold);
-    border-style: double;
-    border-width: 15px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .wide_menu {
-    display: none;
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 
+@media screen and (max-width: 768px) {
+ .column {
+    flex: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
 
 
 
