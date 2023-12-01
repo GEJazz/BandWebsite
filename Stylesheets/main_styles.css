@@ -52,7 +52,6 @@ img {
 
 li {
   list-style: none;
-  display: inline-flex;
 }
 
 p {
@@ -126,6 +125,10 @@ p {
   justify-content: center;
 }
 
+.row ul {
+  padding: 5%;
+}
+
 .spacer {
   height: 50px;
 }
@@ -169,7 +172,9 @@ p {
   font-size: 32px;
 }
 
-
+#navbar_links li {
+    display: inline-flex;
+}
 
 
 
