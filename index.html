@@ -204,14 +204,22 @@ if (window.innerWidth >= 800) {
 }
 
 function expandMenu() {
-  if (dropdown.style.display === "block") {
-    dropdown.style.display = "none";
+  if (event) { 
+    event.stopPropagation();
+  }
+  if (dropdown.style.display === "block") { 
+    dropdown.style.display = "none"; 
   } else {
     dropdown.style.display = "block";
+    dropdown.classList.add("open");
   }
 }
 
 function closeDropdown() {
+  if(event) {
+    event.stopPropagation();  
+  }
+  dropdown.classList.remove('open');
   dropdown.style.display = "none";
 }
 
@@ -226,6 +234,12 @@ window.addEventListener("resize", function() {
   }
 }, true);
 
+window.onclick = function(event) {
+  console.log(event.target)
+    if(!event.target.matches('.navbar')) {
+      closeDropdown();
+    }
+}
 
 </script>
 
