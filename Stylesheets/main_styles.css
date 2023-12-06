@@ -79,6 +79,10 @@ p {
   padding: 20px;
 }
 
+.container {
+  padding-top: 85px;
+}
+
 .image-container {
   padding: 10%;
 }
