@@ -65,13 +65,9 @@ p {
 
 
 
-.bigtext {
+.callout {
   font-size: 60px;
   text-align: center;
-}
-
-.callout {
-  padding: 20%;
 }
 
 .column {
@@ -176,6 +172,11 @@ p {
   font-size: 32px;
 }
 
+#introtext {
+  padding: 20%;
+  font-size: 60px;
+}
+
 #navbar_links li {
     display: inline-flex;
 }
@@ -191,10 +192,10 @@ p {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   #introtext {
     padding-top: 150px;
-    font-size: 32px;
+    font-size: 44px;
   }
 }
 
@@ -215,6 +216,13 @@ p {
   }
   .row {
     flex-direction: column;
+  }
+  #intropic {
+    display: none;
+  }
+  #introtext {
+    padding-top: 70px;
+    font-size: 32px;
   }
 }
 
