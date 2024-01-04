@@ -231,8 +231,8 @@ p {
 
 @media screen and (max-width: 560px) {
   .youtube {
-    width: 400px !important;
-    height: 225px !important;
+    width: 350px !important;
+    height: 196px !important;
   }
   #hamburger {
     font-size: 22px;
